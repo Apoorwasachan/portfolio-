@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+html{
+    overflow-x: hidden;
+   
+}
+section{
+    min-height: 100vh;
+}
+
+.header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+.logo{
+    font-size: 25px;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 40px;
+    
+
+}
+.navbar a:hover,
+ .navbar a.active{
+    color: palevioletred;
+}
+.home{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: whitesmoke;
+    background: url(https://e0.pxfuel.com/wallpapers/537/815/desktop-wallpaper-girl-dark-background-2560x1440-dark.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+    
+
+.home-content{
+    max-width: 550px;
+}
+.home-content h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.home-content h4{
+    font-size: 32px;
+    font-weight: 500;
+    color: aqua;
+}
+.home-content p{
+    margin: 20px 0 30px;
+}
+.home-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 50px;
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border: 2px solid aqua;
+    font-size: 19px;
+    background: aqua;
+    color:black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.btn-box a:hover{
+    background: transparent;
+   color:aqua;
+}
+.home-info{
+    position: absolute;
+    bottom: 20px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+.home-info a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+    background: aqua;
+    font-size: 25px;
+    
+}
+.home-info a:hover{
+    background: transparent;
+    color:aqua
+}
+.about{
+    background-color:rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    border-color: black;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 6rem;
+    color: whitesmoke;
+   
+}
+.heading{
+    margin-top: 4rem;
+    font-size: 50px;
+    text-align: center;
+}
+.about-img{
+    position: relative;
+    width: 25rem;
+    height: 100;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img .photo{
+    width: 50%;
+    border-radius: 60%;
+    border: .25rem solid aqua;
+}
+.aboutinfo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutinfo a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-bottom: 30px;
+
+}
+.mainabout-content{
+    text-align: center;
+}
+.short-heading{
+    color: aqua;
+    font-weight: 20px;
+    font-size: 25px;
+}
+.basicinfo{
+    margin-bottom: 30px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(12, 12, 12);
+    background-size: cover;
+    color: whitesmoke;
+    
+}
+.contact form{
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact form .input-box .field{
+    position: relative;
+    width: 49%;
+    margin: .5rem 0;
+}
+.contact form .input-box .field input,
+.contact form .textarea-field textarea{
+    width: 90%;
+    height: 40%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: aqua;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid aqua;
+}
+.textarea-field{
+    margin-bottom: 20px;
+}
+.heading{
+    margin-bottom: .9rem;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(12, 12, 12);
+    flex-direction: column;
+    color: whitesmoke;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    min-height: 50vh;
+    justify-content:space-between;
+    align-items: center;
+    width: 1200px;
+   
+}
+ 
+#card {
+	background-color: #393B45;
+	height: auto;
+	width: 350px;
+	margin: 10vh auto;
+	border-radius: 25px;
+	padding-bottom: 1px;
+	box-shadow: 2px 2px 5px aqua;
+}
+
+.size {
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-color: aqua;
+	border-radius: 25px 25px 0 0;
+	color: #393B45;
+	padding: 5px 0;
+	font-weight: 800;
+	margin: 0;
+
+}
+
+.image-crop {
+	display: block;
+	position: relative;
+	background-color: #E6EBEE;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 25px;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px aqua;
+    
+}
+
+#avatar {
+	display: inline;
+	height: 180px;
+	width: auto;
+	margin: -15px -46px;
+}
+#avatar2 {
+	display: inline;
+	height: 99px;
+	width: auto;
+	margin: 25px;
+}
+#avatar3 {
+	display: inline;
+	height: 250px;
+	width: auto;
+	margin: -52px;
+}
+
+
+#bio {
+	display: block;
+	margin: 15px auto;
+	width: 280px;
+	height: auto;
+}
+
+#bio p {
+	color: #E6EBEE;
+	font-weight: lighter;
+	font-size: 15px;
+	text-align: justify;
+}
+
+#stats {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	width: 280px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	font-weight: 500;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+
+.stat {
+	font-size: 25px;
+	margin: 0;
+}
+
+.label {
+	margin: 0;
+}
+
+#buttons {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 280px;
+}
+
+button {
+	display: block;
+	position: relative;
+	padding: 10px 0;
+	width: 130px;
+	margin: 15px 0;
+	border-radius: 25px;
+	border: none;
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	font-weight: 500;
+	background-color: #4069E2;
+	color: #E6EBEE;
+}
+
+button:focus {
+	display: none;
+}
+
+button:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+#msg{
+	background-color: #E6EBEE;
+	color: #393B45;
+}
+
+
+
